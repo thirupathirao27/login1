@@ -1,0 +1,122 @@
+
+*{
+    padding:0px;
+    margin:0px;
+}    
+header{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    overflow:hidden;
+  
+}
+#carvid{
+    position: relative;
+    bottom:200px;
+    right:50px;
+    filter:brightness(30%);
+   
+}
+#firstlayout{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction:row;
+    position:absolute;
+    top:50vh;
+    transform:translatex(-1200px);
+    z-index: 1;
+   
+}
+#heading1,#heading2{
+     font-size:50px;
+     color:white;
+     letter-spacing:55px;
+     text-shadow:4px 4px 2px black;
+     word-spacing:20px;
+     position: relative;
+     left:5vw;
+    
+    
+}
+/* #heading1{
+    transform:translateX(-650px)
+} */
+#heading2{
+    font-size:30px;
+    letter-spacing:10px ;
+    top:60vh;
+    left:20vw;
+    transform:translateY(280px);
+    filter:opacity(0);
+    z-index: 1;
+}
+#carimage{
+    width:10vw;
+    height:10vh;
+    position: relative;
+    left:16vw;
+}
+#downarrow{
+    width:10vw;
+    height:19vh;
+    position:absolute;
+    bottom:0px;
+    right:0vw;
+    z-index:2;
+    opacity:0.7;
+    /* transition:transform 2s; */
+}
+#downarrow:active{
+    transform:scale(0.9);
+}
+#secondlayout{
+    width:100%;
+    height:100vh;
+    background-color:black;
+}
+#sec2cardiv{
+    width:40vw;
+    height:80vh;
+    background-color:white;
+    position:absolute;
+    top:110vh;
+    right:0vw;
+    clip-path: polygon(43% 0, 100% 0%, 100% 99%, 0% 100%);
+    background-image:url('../../images/lamborghini.jpg');
+    background-size:110% 110%;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:background-size 0.2s,background-position 0.2s;
+}
+#sec2cardiv:hover{
+    background-size:140% 140%;
+    background-position: center;
+}
+#lambName{
+    font-size:50px;
+    /* position:absolute;
+    top:100vh;
+     */
+    color:cyan;
+    letter-spacing:9px;
+    font-weight:bold;
+    position:relative;
+    left:10vw;
+    top:5vh;
+    text-shadow:2px 2px 2px black;
+    text-decoration:underline wavy cyan 2px;
+    
+}
+#logout{
+    color:white;
+    position:absolute;
+    top:2vh;
+    right:4vw;
+    z-index:3;
+    color:cyan;
+    text-shadow:2px 2px 2px black;
+}
+
